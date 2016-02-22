@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'ChopinScript';
+  src: url('/fonts/ChopinScript/ChopinScript.eot');
+  src: url('/fonts/ChopinScript/ChopinScript.ttf') format('truetype'),
+        url('/fonts/ChopinScript/ChopinScript.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ribbon';
+  src: url('/fonts/Ribbon/SF-Ribbon.ttf') format('truetype');
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choco-box {
+  width: 80%;
+  height: 25rem;
+  background-color: rgb(86, 63, 46);
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.choco-box:before {
+  content: '';
+  width: 3.5rem;
+  height: 30rem;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: rgb(220, 159, 180);
+  position: absolute;
+  top: -9rem;
+  left: 6rem;
+}
+
+.choco-box:after {
+  content: '';
+  position: absolute;
+  width: 3.5rem;
+  height: 17rem;
+  background-color: rgb(220, 159, 180);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  bottom: -4rem;
+  right: 2rem;
+}
+
+.choco-box__msg {
+  font-family: ChopinScript;
+  color: rgb(255, 177, 27);
+  font-size: 3rem;
+  position: absolute;
+  bottom: 3rem;
+  right: 8rem;
+}
+
+.c1 {
+  color: rgb(86, 63, 46); /* 焦茶 */
+}
+
+.c2 {
+  color: rgb(220, 159, 180); /* 撫子 */
+}
+
+.c3 {
+  color: rgb(255, 177, 27); /* 山吹色 */
+}
