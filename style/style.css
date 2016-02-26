@@ -7,11 +7,6 @@
   url('/fonts/ChopinScript/ChopinScript.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Ribbon';
-  src: url('/fonts/Ribbon/SF-Ribbon.ttf') format('truetype');
-}
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -34,8 +29,7 @@ html, body {
 }
 
 .choco-box {
-  width: 100%;
-  height: 20rem;
+  height: 100%;
   background-color: rgb(86, 63, 46);
   position: relative;
   overflow: hidden;
@@ -45,7 +39,7 @@ html, body {
 .choco-box:before {
   content: '';
   width: 3.5rem;
-  height: 30rem;
+  height: 22rem;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -53,23 +47,23 @@ html, body {
   transform: rotate(45deg);
   background-color: rgb(220, 159, 180);
   position: absolute;
-  top: -9rem;
-  left: 6rem;
+  top: -6rem;
+  left: 4rem;
 }
 
 .choco-box:after {
   content: '';
   position: absolute;
   width: 3.5rem;
-  height: 17rem;
+  height: 12rem;
   background-color: rgb(220, 159, 180);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  bottom: -4rem;
-  right: 2rem;
+  bottom: -3rem;
+  right: 0;
 }
 
 .choco-box__msg {
