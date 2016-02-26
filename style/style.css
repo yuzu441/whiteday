@@ -2,9 +2,27 @@
 
 @font-face {
   font-family: 'ChopinScript';
-  src: url('/fonts/ChopinScript/ChopinScript.eot');
-  src: url('/fonts/ChopinScript/ChopinScript.ttf') format('truetype'),
-  url('/fonts/ChopinScript/ChopinScript.woff') format('woff');
+  src: url('../fonts/ChopinScript/ChopinScript.eot');
+  src: url('../fonts/ChopinScript/ChopinScript.ttf') format('truetype'),
+  url('../fonts/ChopinScript/ChopinScript.woff') format('woff');
+}
+
+@-webkit-keyframes box-hide {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: .75;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 *, *:before, *:after {
@@ -34,6 +52,11 @@ html, body {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
+}
+
+.choco-box.hide {
+  display: none;
+  -webkit-animation: box-hide 2s linear 0s;
 }
 
 .choco-box:before {
@@ -110,10 +133,6 @@ html, body {
 
 .chocolate-block:last-child {
   border-right: 0;
-}
-
-.hide {
-  display: none;
 }
 
 .c1 {
