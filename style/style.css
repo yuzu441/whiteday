@@ -4,12 +4,16 @@
   font-family: 'ChopinScript';
   src: url('/fonts/ChopinScript/ChopinScript.eot');
   src: url('/fonts/ChopinScript/ChopinScript.ttf') format('truetype'),
-        url('/fonts/ChopinScript/ChopinScript.woff') format('woff');
+  url('/fonts/ChopinScript/ChopinScript.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Ribbon';
   src: url('/fonts/Ribbon/SF-Ribbon.ttf') format('truetype');
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 html, body {
@@ -23,9 +27,15 @@ html, body {
   align-items: center;
 }
 
-.choco-box {
+.container-box {
   width: 80%;
-  height: 25rem;
+  height: 17rem;
+  overflow: hidden;
+}
+
+.choco-box {
+  width: 100%;
+  height: 20rem;
   background-color: rgb(86, 63, 46);
   position: relative;
   overflow: hidden;
@@ -69,6 +79,47 @@ html, body {
   position: absolute;
   bottom: 3rem;
   right: 8rem;
+}
+
+.chocolate {
+  height: 100%;
+}
+
+.chocolate-line {
+  display: flex;
+  height: 25%;
+  border-bottom: 4px solid #2A130C;
+  border-left: 4px solid #2A130C;
+  border-right: 4px solid #2A130C;
+}
+
+.chocolate-line:first-child {
+  border-top: 4px solid #2A130C;
+}
+
+.chocolate-block {
+  background-color: #602D1D;
+  width: 20%;
+  font-family: 'Lily Script One', cursive;
+  color: #3A1B11;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-right: 4px solid #2A130C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, .3) inset, -3px -3px 0 0 rgba(0, 0, 0, .3) inset;
+  -moz-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, .3) inset, -3px -3px 0 0 rgba(0, 0, 0, .3) inset;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, .3) inset, -3px -3px 0 0 rgba(0, 0, 0, .3) inset;
+  text-shadow: 0px 1px 0 #8C8888;
+}
+
+.chocolate-block:last-child {
+  border-right: 0;
+}
+
+.hide {
+  display: none;
 }
 
 .c1 {
